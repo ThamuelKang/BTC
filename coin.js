@@ -11,7 +11,7 @@ const checkPrice = function () {
         .then(response => response.json())
         .then(data => {
             priceTag.innerHTML = data.bpi[currency].rate_float.toFixed(2)
-            updatedTag.innerHTML = "Last updated: " + data.time.updated
+            updatedTag.innerHTML = data.time.updated
             console.log(updatedTag)
         })
 }
