@@ -8,17 +8,24 @@ body {
 
     background-color: black;
     color: white;
+    overflow: hidden;
+}
+
+@keyframes fade {
+    0% { opacity: 0;}
+    100% {opacity: 1;}
 }
 
 h1 {
     font-size: 15vw;
     font-weight: 700;
+    animation: fade .5s ease-in;
 
 }
 
 h2 {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 section {
